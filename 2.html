@@ -3,18 +3,74 @@
 <head>
   <title>저작권거래의 자유 - 저작인격권</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left: 33px;
+    }
+    #article{
+      padding-left: 25px;
+    }
+    @media(max-width:550px){
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right: none;
+      }
+      h1{
+        border-bottom: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">저작권거래의 자유</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">저작권</a></li>
+      <li><a href="2.html">저작인격권</a></li>
+      <li><a href="3.html">저작재산권</a></li>
+    </ol>
+    <div id="article">
+      <h2>저작인격권</h2>
+      <p>저작 인격권(著作人格權)은 저작자가 저작물을 통해서 가지고 있는 인격적인 이익을 보호하기 위한 권리를 말한다.</p>
+      <p>저작권법상 저작자에게 인정된 권리는 크게 "저작 재산권"과 "저작 인격권"의 2가지로 나눌 수가 있다.
+        저작 재산권은 타인에게 양도하는 것이 가능하나, 저작인격권은 일신전속권이라서 타인에게 양도할 수 없다.
+        또한 저작 재산권은 보호 기간의 제한이 있지만, 저작 인격권은 저작권자가 사망하여 저작 인격권이 소멸된 후에도 저작권법에 의해 보호된다.
+        대한민국의 저작권법에서는 저작 인격권을 공표권, 성명 표시권, 동일성 유지권으로 나누고 있다.</p>
+    </div>
+  </div>
+  <!--
+  <h1><a href="index.html"><font color="red">저작권거래의 자유</font></a></h1>
   <ol>
-    <li><a href="1.html">저작권</a></li>
-    <li><a href="2.html">저작인격권</a></li>
-    <li><a href="3.html">저작재산권</a></li>
+    <li><a href="1.html"><font color="red">저작권</font></a></li>
+    <li><a href="2.html"><font color="red">저작인격권</font></a></li>
+    <li><a href="3.html"><font color="red">저작재산권</font></a></li>
   </ol>
-  <h2>저작인격권</h1>
-  <p>저작 인격권(著作人格權)은 저작자가 저작물을 통해서 가지고 있는 인격적인 이익을 보호하기 위한 권리를 말한다.</p>
-  <p>저작권법상 저작자에게 인정된 권리는 크게 "저작 재산권"과 "저작 인격권"의 2가지로 나눌 수가 있다.
-    저작 재산권은 타인에게 양도하는 것이 가능하나, 저작인격권은 일신전속권이라서 타인에게 양도할 수 없다.
-    또한 저작 재산권은 보호 기간의 제한이 있지만, 저작 인격권은 저작권자가 사망하여 저작 인격권이 소멸된 후에도 저작권법에 의해 보호된다.
-    대한민국의 저작권법에서는 저작 인격권을 공표권, 성명 표시권, 동일성 유지권으로 나누고 있다.</p>
+  -->
 </body>
+
