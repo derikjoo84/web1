@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>인물퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var imgArray= new Array();
+      imgArray[0]="은지원.jpg"; //사진
+      imgArray[1]="백종원.jpg"; //사진
+      imgArray[2]="박보영.jpg"; //사진
+      imgArray[3]="현주엽.png"; //사진
+      imgArray[4]="트럼프.jpg"; //사진
+      imgArray[5]="이수근.jpg"; //사진
+      imgArray[6]="김연경.jpg"; //사진
+
+      var j = 0
+      var p = imgArray.length;
+      var preBuffer = new Array()
+      for (i=0; i<p; i++){
+        preBuffer[i] = new Image()
+        preBuffer[i].src = imgArray[i]
+      }
+      var whichImage = Math.round(Math.random()*(p-1));
+      function showImage(){
+        document.write('<img src="'+imgArray[whichImage]+'" width="200" height="150" class="center" ">');
+      }
+    </script>
+  </head>
+  <body>
+    <h1>인물 퀴즈</h1>
+
+    <script LANGUAGE="JavaScript">
+      showImage();
+    </script>
+    <script type="text/javascript">
+      var timeleft = 3;
+      var downloadTimer = setInterval(function() {
+        if(timeleft <= 0){
+          clearInterval(downloadTimer);
+        }
+        document.getElementById("progressBar").value = 3 - timeleft;
+        timeleft -= 1;
+      }, 1000);
+    </script>
+    <p><button type="button" onclick= "showImage()">
+      다음
+    </button>
+    </p>
+    <p><center>
+      <progress value="0" max="3" id="progressBar"></progress>
+    </p>
+    <p><center>
+    <font face="arial, helvetica" size"-2">Silversyu provided<br>
+    Master</font>
+    </center></p>
+  </body>
+</html>
